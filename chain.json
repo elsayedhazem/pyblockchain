@@ -1,0 +1,12 @@
+[
+  {
+    "previous_hash": "0",
+    "nonce": 67170,
+    "id": 0,
+    "timestamp": 1699427804.6617067,
+    "data": [
+      "Genesis block."
+    ],
+    "hash": "000005163dbcbd434f5c0c055a2a874a4f2e7c3dcd3f4df8dad07e80b13445bc"
+  }
+]
