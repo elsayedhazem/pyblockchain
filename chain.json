@@ -8,5 +8,45 @@
       "Genesis block."
     ],
     "hash": "000005163dbcbd434f5c0c055a2a874a4f2e7c3dcd3f4df8dad07e80b13445bc"
+  },
+  {
+    "previous_hash": "000005163dbcbd434f5c0c055a2a874a4f2e7c3dcd3f4df8dad07e80b13445bc",
+    "nonce": 1632558,
+    "id": 1,
+    "timestamp": 1701276541.1848588,
+    "data": {
+      "event1": {
+        "type": "new_material",
+        "material_id": "uuid-material-1234",
+        "material_reference": "http://example.com/materials/aluminum-cans-info"
+      },
+      "event2": {
+        "type": "new_entity",
+        "entity_id": "uuid-entity-5678",
+        "entity_reference": "Aluminum Recycling Co., 123 Recycle Rd., Eco City"
+      },
+      "event3": {
+        "type": "new_process",
+        "process_id": "uuid-process-9012",
+        "process_reference": "Transforming aluminum cans into aluminum sheets"
+      },
+      "event4": {
+        "type": "checkpoint",
+        "checkpoint_id": "uuid-checkpoint-3456",
+        "original_product_upc": "012345678912",
+        "quantity": 5000,
+        "item_ref": null,
+        "process_ids": [
+          "uuid-process-9012"
+        ],
+        "material_out_id": "uuid-material-out-7890",
+        "origin_checkpoint": "uuid-origin-1122",
+        "destination_checkpoint": "uuid-destination-3344",
+        "entity_id": "uuid-entity-5678",
+        "timestamp_in": "2023-11-29T10:00:00Z",
+        "timestamp_out": "2023-11-29T16:00:00Z"
+      }
+    },
+    "hash": "00000f3f0a48c4e53d87d70638c59171efaa5370701bb457b847751619b64352"
   }
 ]
