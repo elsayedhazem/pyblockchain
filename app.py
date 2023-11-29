@@ -27,7 +27,7 @@ class TransactionsModel(BaseModel):
 	transactions: dict
 
 
-### API ###
+### API ### 
 
 SETTINGS = {
 	"difficulty": 5, ### Represents the network difficulty for PoW
@@ -67,7 +67,7 @@ async def write_chain(chain: ChainModel):
 	return Response(status_code=200, content="Chain saved.")
 
 
-@app.get("/transactions", response_model=TransactionsModel)
+@app.get("/events", response_model=TransactionsModel)
 async def get_transactions():
 	transactions = []
 	with open("transactions.json", 'r') as f:
@@ -78,8 +78,8 @@ async def get_transactions():
 	}
 
 
-@app.post("/transactions")
-async def write_transactions(transactions: TransactionsModel):
+@app.post("/events")
+async def write_transactions(events: TransactionsModel):
 	pool = dict()
 	with open("transactions.json", 'r') as f:
 		pool = json.load(f)
